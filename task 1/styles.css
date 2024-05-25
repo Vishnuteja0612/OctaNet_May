@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {   
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 1rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 10px; /* Slightly left */
+    top: 3.8rem; /* Increase distance from menu icon */
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: display 0.3s ease-in-out;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #aeaaaa;
+}
+
+.vertical-line {
+    border-left: 1px solid #444;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.search-bar {
+    margin-left: 20px;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-btn {
+    background-color: #ff6600;
+    color: white;
+    margin-left: auto;
+}
+
+.login-btn:hover {
+    background-color: #aeaaaa;
+    transform: translateY(-2px);
+}
+
+.hero {
+    background: url('blockchain_img.jpg') no-repeat center center/cover;
+    color: rgb(219, 205, 205);
+    text-align: left;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 800px;
+    margin-left: 0 auto;
+    
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 15rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.get-started-btn {
+    background-color: #ff6600;
+    color: white;
+}
+
+.get-started-btn:hover {
+    background-color: #aeaaaa;
+    transform: translateY(-2px);
+}
+
+.login-form {
+    margin-right: 128px;
+    background-color: rgba(57, 56, 56, 0.7);
+    padding: 2.8rem;
+    border-radius: 300px;
+    max-width: 300px;
+    color: white;
+    box-shadow: 0 8px 16px rgb(186, 179, 179);
+}
+
+.login-form h2 {
+    margin-bottom: 1rem;
+}
+
+.login-form form {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+.login-form button {
+    background-color: #ff6600;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+}
+
+.login-form button:hover {
+    background-color: #aeaaaa;
+    transform: translateY(-2px);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    background-color: #b4a9a9;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    background-color: #090909;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 2rem 1rem;
+}
+.cta h2{
+    color: #e9dfdf;
+    height: 60px;
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    color: rgb(227, 218, 218);
+}
+
+.cta-btn:hover {
+    background-color: #aeaaaa;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #7e7b7b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+

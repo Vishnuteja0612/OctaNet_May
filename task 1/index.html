@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="menu-icon" onclick="toggleDropdown()">&#9776;</div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="#">Top Cryptocurrencies</a>
+                    <a href="#">Trending Today</a>
+                    <a href="#">Latest News</a>
+                    <a href="#">Products</a>
+                    <a href="#">About Cryptocurrencies</a>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="logo">CryptoExchange</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <div class="vertical-line"></div>
+                <li><a href="#">Features</a></li>
+                <div class="vertical-line"></div>
+                <li><a href="#">About</a></li>
+                <div class="vertical-line"></div>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button class="btn login-btn">Login</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Buy and Sell Cryptocurrencies</h1>
+            <p>Join millions of users trading Bitcoin, Ethereum, and more.</p>
+            <button class="btn get-started-btn">Get Started</button>
+        </div>
+        <div class="login-form">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username or Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn login-btn">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Secure Wallet</h2>
+            <p>Your funds are safe with our multi-layer security measures.</p>
+        </div>
+        <div class="feature">
+            <h2>Fast Transactions</h2>
+            <p>Experience lightning-fast transactions and low fees.</p>
+        </div>
+        <div class="feature">
+            <h2>24/7 Support</h2>
+            <p>Our support team is here to help you at any time of the day.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to start trading?</h2>
+        <button class="btn cta-btn">Sign Up Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CryptoExchange. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
